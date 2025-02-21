@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ListOfItems</title>
+</head>
+<style>
+    .main{
+        justify-content: space-around;
+        display:inline-table;
+        background-color: rgb(234, 231, 228);
+        padding:10px;
+        margin:10px;
+    } 
+    .row{
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    } 
+    .cart{
+        display: flex;
+        justify-content: space-between;
+        padding:10px;
+        font-style: italic;
+    }
+    fieldset{
+        text-align: center;
+        padding:20px;
+    }
+    legend{
+        text-align: center;
+        font-size: larger;
+        font-weight: bold;
+    }
+</style>
+<script>
+    function fun(){
+        alert("Added to Cart..");
+    }
+</script>
+<body>
+    <fieldset>
+        <legend><h1>CAFE</h1></legend>
+        <h2><i>Eat till your heart is full🍻🩵</i></h2>
+        <hr>
+    <div class="cart">
+    <h2><b>Coffee Shop</b></h2>                                                                                                      
+    <h2><span>Cart:0</span></h2> 
+    </div> 
+    <div class="row">
+        <div class="main">
+            <img src="/Images/1.png"width="300" height="300">
+            <h3>Product 1</h3>
+            <pre>Price:100                        <button onclick="fun()">Add</button></pre>
+            <hr><br>
+            <div>
+                <img src="/Images/5.png"width="300" height="300">
+                <br>
+                <h3>Product 5</h3>
+                <pre>Price:180                        <button onclick="fun()">Add</button></pre>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="/Images/2.png"width="300" height="300">
+            <br>
+            <h3>Product 2</h3>
+            <pre>Price:110                        <button onclick="fun()">Add</button></pre>
+            <hr><br>
+            <div>
+                <img src="/Images/6.png"width="300" height="300">
+                <br>
+                <h3>Product 6</h3>
+                <pre>Price:170                        <button onclick="fun()">Add</button></pre>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="/Images/3.png"width="300" height="300">
+            <br>
+            <h3>Product 3</h3>
+            <pre>Price:190                        <button onclick="fun()">Add</button></pre>
+            <hr><br>
+            <div>
+                <img src="/Images/2.png"width="300" height="300">
+                <br>
+                <h3>Product 7</h3>
+                <pre>Price:123                        <button onclick="fun()">Add</button></pre>
+            </div>
+        </div>
+
+        <div class="main">
+            <img src="/Images/1.png"width="300" height="300">
+            <br>
+            <h3>Product 4</h3>
+            <pre>Price:150                        <button onclick="fun()">Add</button></pre>
+            <hr><br>
+            <div>
+                <img src="/Images/6.png"width="300" height="300">
+                <br>
+                <h3>Product 8</h3>
+                <pre>Price:145                        <button onclick="fun()">Add</button></pre>
+            </div>
+        </div>
+
+    </div>
+    </fieldset>
+</body>
+</html>
