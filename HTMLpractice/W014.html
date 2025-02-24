@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Column</title>
+</head>
+<style>
+    .color1{
+        background-color: rgb(168, 248, 248);
+    }
+    .color2{
+        background-color: rgb(240, 250, 169);
+    }
+</style>
+<body>
+    <table border="3">
+        <caption>
+            <b>TABLE</b> 
+        </caption>
+
+        <colgroup>
+            <col class="color1">
+            <col class="color1">
+            <col class="color2">
+        </colgroup>
+
+    <!--can give line ga like this three times
+    so it will apply to three columns in that order-->
+    
+    <!--
+        <colgroup>
+            <col span="2" class="color1">
+            <col class="color2">
+        </colgroup>
+
+        here instead of giving 3 separate lines for color
+        you can give span=2 so first two cols will be that color
+    -->
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Score</th>
+        </tr>
+
+        <tr>
+            <td>Neethu</td>
+            <td>BBA</td>
+            <td>85%</td>
+        </tr>
+
+        <tr>
+            <td>Adhya</td>
+            <td>BA</td>
+            <td>70%</td>
+        </tr>
+
+        <tr>
+            <td>Dhriti</td>
+            <td>BTech</td>
+            <td>90%</td>
+        </tr>
+    </table>
+</body>
+</html>

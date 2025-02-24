@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+<body>
+    From
+    <input list="stations1"/>
+    <datalist id="stations1">
+        <option value="Hyderbad"></option>
+        <option value="Delhi"></option>
+        <option value="Mumbai"></option>
+        <option value="Hubli"></option>
+        <option value="Dehradun"></option>
+    </datalist>
+
+    To
+    <input list="stations2"/>
+    <datalist id="stations2">
+        <option>Hyderabad</option>
+        <option>Delhi</option>
+        <option>Mumbai</option>
+        <option>Hubli</option>
+        <option>Dehradun</option>
+    </datalist>
+
+    <!--it is same even if you use option tag as any above
+    datalist:it shows the options, 
+    like if we type h then it shows options that has h in it 
+    i.e it customizes-->
+
+
+    <br><br><hr><br><br>
+
+    <select>
+        <optgroup label="India">
+            <option value="Delhi">Delhi</option> 
+            <!--here if we dont give delhi 
+            then it shows empty box before we select
+            if we give delhi then before selecting only it shows delhi
+            -->
+            <option value="Mumbai">Mumbai</option>
+        </optgroup>
+        <optgroup label="America">
+            <option>NYC</option>
+            <option>LA</option>
+        </optgroup>
+    </select>
+    <input type="Submit" value="Submit">
+
+    <!--optgroup:it groups as sub options like India, America-->
+
+
+</body>
+</html>
