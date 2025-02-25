@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container</title>
+</head>
+<style>
+    h1,p{
+        color:bisque;
+        background-color:brown;
+    }
+    .container{
+        display:flex;
+    }
+    .container div{
+        width: 100px;
+        height: 100px;
+        background-color: blanchedalmond;
+    }
+    .container div p{
+        color: brown;
+        background-color: rgb(184, 248, 227);
+    }
+</style>
+<body>
+    <h1>Hello World</h1>
+    <p>Hii, how are you...</p>
+
+    <div class="container">
+        <div>Box1</div>
+        <div>Box2</div>
+        <div>Box3</div>
+    </div>
+    <!--as three divs inside container class
+    that container div will apply-->
+
+    <div>Here not applicable as it outside main div</div>
+
+    <div class="container">
+        <div>Products</div>
+        <div>Services</div>
+        <div>Contact</div>
+        <div><p>This is paragraph</p></div>
+        <p>first p class will be applied
+            but flex will happen as inside main div
+        </p>
+    </div>
+</body>
+</html>

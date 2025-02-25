@@ -1,0 +1,18 @@
+*{
+    background-color: rgb(237, 237, 160);
+}
+h1.c1{
+    color: brown;
+    background-color: rgb(237, 158, 158);
+}
+p.c1{
+    color: brown;
+    background-color: rgb(236, 205, 255);
+}
+p.c2{
+    font-size: larger;
+}
+.test{
+    color: rgb(30, 32, 32);
+    background-color: rgb(156, 225, 202);
+}
