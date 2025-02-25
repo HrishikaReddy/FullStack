@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .c1 {
+        width: 100px;
+        border: 1px solid black;
+        box-sizing: border-box;
+      }
+      .c2 {
+        width: 100px;
+        padding: 10px; /*width becomes 120px */
+        border: 1px solid orange;
+        box-sizing: border-box;
+      }
+    </style>
+    <!--border box means all boxes will come till same point
+    even if one box has small text or one box has more text-->
+    <!--if we dont keep border box but we give padding
+    have same width diff alignment-->
+  </head>
+  <body>
+    <div class="c1">Hello World</div>
+    <div class="c2">Hello</div>
+    <div class="c2">Hello World, how are you</div>
+  </body>
+</html>
