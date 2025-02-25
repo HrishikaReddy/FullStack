@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic</title>
+</head>
+<body>
+    <script>
+        let a=10 /*var a=20*/ 
+        /*same purpose of both*/ 
+        a=20
+        document.write(a)
+    </script>
+    <!--let a=10 and then a=20 means that it displays 20
+    as let is used so it can be changed-->
+    <hr>
+    <script>
+        const b=30
+        document.write(b)
+    </script>
+    <!--const means it will be constant that value-->
+    <hr>
+    <script>
+        const b=30
+        b=50
+        document.write(b)
+    </script>
+    <!--if we use const and then give another value
+    then it is error so no output-->
+    <hr><br><br>
+    <script>
+        var firstName="Neethu"; //camel case
+        let SecondName="Hrishika"; //title case
+        //any one we can use
+        let age="21"; //here it is considered as number but if we give in "" then it is string
+        let promoted=true; 
+        let department;
+        let phone=null;
+        document.write(firstName+"<br>"); //js is case sensitive
+        document.write(SecondName+"<br>");
+        document.write(typeof firstName+"<br>");
+        /* typeof gives the type of that 
+        name-string, age-number, promoted-boolean,
+        department-nothing(as not mentioned), phone-object */ 
+
+        let val=parseInt(age); // (or) let val=Number(age)
+        document.write(typeof val+"<br>"); 
+        //age is string as in "" so converting into number
+        
+        let num=10
+        let str=String(num);
+        document.write(typeof str+"<br>");
+        //num is number, we are converting to string
+    </script>
+    <br><hr>
+    
+    <div id="dv"></div>
+    <script>
+        let myName="Aadhya";
+        //document.write(myName);
+        //alert(myName);  -  if we use this no need of doc.write then click anywhere on page it shows alert of name
+        //console.log(myName);  -  shows in console i.e ctrl+shift+i
+        dv.innerHTML = myName; //another way of printing just use id=dv in div
+    </script>
+</body>
+</html>
