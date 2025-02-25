@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen Width</title>
+</head>
+<style>
+    .con{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    @media only screen and (max-width:600px){
+        .box{
+            color: rgb(231, 18, 177);
+            width:50%
+        }
+    }
+    @media only screen and (min-width:600px){
+        .box{
+            color: rgb(167, 228, 35);
+            width:50%
+        }
+    }
+    @media only screen and (min-width:769px){
+        .box{
+            color: rgb(208, 127, 255);
+            width:50%
+        }
+    }
+    @media only screen and (orientation:landscape){
+        .box{
+            background-color: lightcoral;
+        }
+    }
+    @media only screen and (orientation:portrait){
+        .box{
+            background-color: lightcyan;
+        }
+    }
+</style>
+<!--here 0-600px first color
+min 600-769 second color
+min 769-any px third color
+if we change width then placement of hello changes-->
+<body>
+    <div>
+        <div>Hello</div>
+        <div>Hello</div>
+        <div>Hello</div>
+        <div>Hello</div>
+    </div>
+    <hr>
+    <div class="con">
+        <div class="box">Hello</div>
+        <div class="box">Hello</div>
+        <div class="box">Hello</div>
+        <div class="box">Hello</div>
+    </div>
+
+</body>
+</html>

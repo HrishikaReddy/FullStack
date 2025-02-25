@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Container</title>
+  </head>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      column-gap: 10px;
+      row-gap: 10px;
+      background-color: bisque;
+    }
+    .container div {
+      background-color: rgb(214, 251, 251);
+    }
+    .fun{
+        display: flex; 
+    } 
+  </style> 
+  <!--flex means side side it comes
+  grid and then grid template columns means arrange as cols
+  -->
+  <body>
+    <div class="container">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>ReactJS</div>
+      <!--here as only three autos we gave in conatiner class 
+      so only three columns so this will come in next line-->
+      <div>Java</div>
+      <div>Python</div>
+      <!--so many if we give also it is as three columns-->
+    </div>
+
+    <hr>
+
+    <div class="fun">
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+    </div>
+  </body>
+</html>
