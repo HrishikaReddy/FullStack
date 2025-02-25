@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Chane With Size</title>
+</head>
+<body>
+    <picture>
+        <source media="(min-width:1100px)" srcset="/Images/4.png">
+        <source media="(min-width:900px)" srcset="/Images/3.png">
+        <source media="(min-width:700px)" srcset="/Images/2.png">
+        <img src="/Images/1.png">
+    </picture>
+
+    <!--here first 1.png comes 
+    then as the window size we increase it changes to 2,3,4.png
+    first 1.ppng
+    then at 700, 2.png
+    from 700-900 3.png
+    from 900-1100 4.png
+    we can give: 
+      <img src="/Images/1.png" width="1000px">
+      here width means just how much size we want image to be 
+      does not affect the other operation
+    -->
+</body>
+</html>

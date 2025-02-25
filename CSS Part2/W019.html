@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndiaMap</title>
+</head>
+<body>
+
+    <!--if we click on state that wiki page will be opened-->
+    <img src="/asset/india.png" usemap="#m1">
+
+    <map name="m1">
+        <area shape="poly"
+        coords="106,144,159,200,109,261,36,190"        
+        href="https://en.wikipedia.org/wiki/Rajasthan"
+        />
+        
+        <!--mostly use polygan oly as four coords x,y 
+        so it covers corners
+        if rect, circle then not much coverage-->
+        <area shape="circle"
+        coords="181,272,50"  
+        href="https://en.wikipedia.org/wiki/MadhyaPradesh"
+        />
+
+        <area shape="rect"
+        coords="93,327,162,355"  
+        href="https://en.wikipedia.org/wiki/Maharashtra"
+        />
+
+        <area shape="default"  
+        href="https://en.wikipedia.org/wiki/India"
+        />
+        <!--here default no need of coords
+        means anywhere else if we click then india link is opened-->
+    </map>
+
+    <!--
+    here first we insert the image then link it to map tag
+    area as polygan so four x,y coords
+    then coordinates of rajasthan we take by:
+    open the india map in paint then on that state corners we keep mouse 
+    below left corner it shows x,y coords
+    paste those
+    give the href link
+    
+    we can give circle also by taking 
+    random point on MP as x,y and radius as 50
+    if we give more then it goes to other state also 
+    so it covers that area
+    -->
+</body>
+</html>
