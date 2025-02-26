@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHTML</title>
+    <script>
+        function f1(){
+            let n=t1.value; //means which you are entering in textbox that value it considers
+            if(n % 2 == 0){
+                lbl.innerHTML="Even Number"; //here if we give doc.write it goes to new page and displays but here it shows below submit only
+                lbl.style.color="yellow";
+                lbl.style.background="teal";
+            }
+            else{
+                lbl.innerHTML="Odd Number";
+                lbl.style.color="teal";
+                lbl.style.background="yellow";
+
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>
+        <input type="text" id="t1">
+    </p>
+    <button onclick="f1()">Submit</button>
+    <p>
+        <label id="lbl"></label>
+    </p>
+</body>
+</html>

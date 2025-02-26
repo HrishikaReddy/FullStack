@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+    <script>
+      function add(a, b) {
+        return a + b;
+      }
+      function sqr(x) {
+        return x * x;
+      }
+      let result = add(4, 5);
+      let finalResult = sqr(result);
+      document.write(finalResult);
+      document.write("<br>");
+
+      //////////////////////////
+      //   function add(a,b) {
+      //     return a+b
+      //   }
+      //   let result = add(4,5);
+      //   document.write(result);
+
+      ////////////////////////
+      //   function greet(a) {
+      //     if (a < 12) return "Good Morning";
+      //     else return "Good Afternoon";
+      //   }
+      //   let result = greet(12);
+      //   document.write(result)
+
+      /////////////////////
+      //   function greet(a) {
+      //     if (a<12) document.write("Good Morning"); //can give withput{} if one line only
+      //     else document.write("Good Afternoon")
+      //   }
+      //   greet(12);
+
+      ////////////////////
+        function greet() {
+          document.write("Good Morning");
+        }
+        //greet() - directly calling function so good morning will be displayed
+    </script>
+  </head>
+  <body>
+    <button onclick="greet()">click</button> 
+    <!-- now here creating button now if click on button 
+     then good morning is displayed
+     as func greet -->
+  </body>
+</html>
