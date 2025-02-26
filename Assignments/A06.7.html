@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School</title>
+    <script>
+    function f1() {
+        let marks=t1.value;
+        if(marks>80) {
+            lbl.innerHTML="A Grade";
+        }
+        else if(marks>60 && marks<=80) {
+            lbl.innerHTML="B Grade";
+        }
+        else if(marks>50 && marks<=60) {
+            lbl.innerHTML="C Grade";
+        }
+        else if(marks>45 && marks<=50) {
+            lbl.innerHTML="D Grade";
+        }
+        else if(marks>25 && marks<=45) {
+            lbl.innerHTML="E Grade";
+        }
+        else {
+            lbl.innerHTML="F Grade";
+        }
+    } 
+    </script>
+</head>
+<body>
+    <p><input type="text" id="t1"></p>
+    <button onclick="f1()">Check Grade</button>
+    <p><label id="lbl"></label></p>
+</body>
+</html>
