@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body>
+    <button onclick="greet()">click</button>
+    <script>
+        function greet() {
+            console.log("Hello World");
+        }
+    </script>
+
+    <!-- another way of using button -->
+     <button id="btn">Greet</button>
+     <script>
+     btn.addEventListener("click",function() {
+        console.log("Good Morning");
+     })
+     </script>
+</body>
+</html>

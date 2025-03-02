@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function fun() {
+        p1.innerHTML="Hello"; 
+        document.getElementById("p2").innerHTML="Morning";
+        document.querySelector('#p3').innerHTML="Evening";
+    } 
+    //can use any of the above three ways
+</script>
+<body>
+    <!-- if we click on button then it changes to above given -->
+    <p id="p1">This is paragraph</p>
+    <p id="p2">This is second paragraph</p>
+    <p id="p3">This is third paragraph</p>
+    <button onclick="fun()">Click</button>
+</body>
+</html>
