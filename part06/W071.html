@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle </title>
+    <style>
+      .theme {
+        background-color: black;
+        color:white
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="f1()">Dark/Light Theme</button>
+    <div id="d">
+    <p>Hello World</p>
+    </div>
+    <script>
+      function f1() {
+        document.body.classList.toggle("theme") 
+        //if class is there it will remove, if not there it will add
+
+        //d.classList.toggle("theme") 
+        // //it is done by using id="d" so only apply to hello world
+      }
+    </script>
+  </body>
+</html>

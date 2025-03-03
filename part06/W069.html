@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <form>
+      <select id="fruits" multiple>
+        <option value="apple">Apple</option>
+        <option value="pear">Pear</option>
+        <option value="banana">Banana</option>
+      </select>
+      <br><br>
+      <input type="button" onclick="disp()" value="Click" />
+      <br><br>
+      <label id="lbl"></label> 
+      <!-- instead of div in previous program here we use lbl -->
+    </form>
+    <script>
+      function disp() {
+        // fruits.options[2].selected = true; 
+        // fruits.selectedIndex = 2; //this along with 22 line gives banana even if you select any other option
+
+        ////to select only one option////
+        // str = fruits.value; //store the fruits in str 
+
+        ////for more than option////
+        str=""
+        for (let e of fruits.options){
+          if(e.selected)  {
+            str += e.value + " " //when we select more than one option and to print 
+          } 
+        }
+
+        lbl.innerHTML = str;
+      }
+    </script>
+  </body>
+</html>

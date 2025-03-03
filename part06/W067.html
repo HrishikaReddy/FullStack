@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Button</title>
+  </head>
+  <body>
+    <p><input type="radio" name="fruit" class="c" value="Apple" />Apple</p>
+    <p><input type="radio" name="fruit" class="c" value="mango" />Mango</p>
+    <p><input type="radio" name="fruit" class="c" value="orange" />Orange</p>
+    <button onclick="disp()">Submit</button>
+    <hr />
+    <div id="d"></div>
+    <script>
+      const disp = () => {
+        let fruit = document.getElementsByClassName("c"); //getbyname doesn't work
+        // can use <input> tag also by TagName
+        let txt = ""; //text is empty initailly
+        for (let i = 0; i < fruit.length; i++) {  //check using for loop
+          if (fruit[i].checked) { //if that option is checked or not
+            txt = txt + fruit[i].value; //it prints that option
+          }
+        }
+        d.innerHTML = txt; // so that it display the selected option below
+      };
+    </script>
+  </body>
+</html>
