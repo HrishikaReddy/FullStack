@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea id="t1" rows="5" cols="20">Apple, Orange, Mango
+    </textarea>
+    <textarea id="t2" rows="5" cols="20"></textarea>
+    <script>
+      t1.oncopy = t1.oncut = function () {
+        t2.value = document.getSelection(); //if you copy or cut then what you slect that displays in 2nd textarea
+      };
+      t2.onpaste = function (event) {
+        alert(event.clipboardData.getData("text/plain")); //what you copy that gets copied to clipboard and when you paste it gives alert then when click ok it also pastes in 2nd textarea
+      };
+    </script>
+  </body>
+</html>

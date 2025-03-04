@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- obj names will not be printed so use JSON.stringify
+     (or) use '' before and after {} and give each string in "" -->
+    <script>
+      let student = '{"name": "john","age": 20}';
+      document.write(student);
+      document.write(student.name);
+    //   now obj name are string so john cant be printed
+    // so convert to obj using JSON.parse
+      let obj = JSON.parse(student)
+      document.write(obj.name)
+
+      ////////////////
+      //   let student = {
+      //     name: "john",
+      //     age: 20,
+      //   };
+      //   document.write(JSON.stringify(student))
+      ////////////
+    </script>
+  </body>
+</html>
