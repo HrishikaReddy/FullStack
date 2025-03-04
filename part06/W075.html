@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="d1"></div>
+    <script>
+        //instead of giving <input type="checkbox" value="apple"
+        //like this for all the fruits we give as below
+        //so instead of giving multiple checkboxes
+      let fruits = ["Apple", "Orange", "Mango","Banana"]; //directly we add here it shows in o/p
+      for (let i = 0; i < fruits.length; i++) {
+        let opt = document.createElement("input"); 
+        let lbl = document.createElement("label");
+        opt.type = "checkbox";
+        opt.name = fruits[i];
+        opt.value = fruits[i];
+        lbl.innerHTML = fruits[i];
+        d1.append(lbl); //for adding extra items
+        d1.append(opt);
+      }
+    </script>
+  </body>
+</html>

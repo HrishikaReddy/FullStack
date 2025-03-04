@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <select id="s"></select>
+    <script>
+        let fruits = ["Apple","Orange","Banana","pear"] //if add any extra directly it displays
+        for (let i=0;i<fruits.length;i++){ //for loop as all will be printed
+            s.options[i] = new Option(fruits[i],fruits[i]) //here it is value,display
+            //even if one time you type it will come as consider as value
+            //fruits will be display as options directly
+        }
+    </script>
+  </body>
+</html>
