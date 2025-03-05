@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag inside the Box</title>
+</head>
+<style>
+    #target {
+        border:2px solid red;
+        width: 300px;
+        height: 300px;
+        margin-left: 600px;
+    } 
+    /* the above is for the box */
+</style>
+<body>
+    <h1 id="head">Drag The Ball</h1>
+    <div id="d1" style="z-index: 1000;">
+         <!-- //z-index is given so that ball stay on  top of the box -->
+        <img draggable="true" src="/Images/ball.png" width="200px" id="ball"/> 
+        <!-- draggable is used so that we drag -->
+    </div> 
+    <div id="target"></div>
+
+    <script>
+        ball.style.position="absolute"; //ball inital position is fixed 
+        ball.ondragstart = function (event){
+            head.innerHTML = "Drag Started";
+        };
+        ball.ondragend = function (event){
+            head.innerHTML = "Drag Ended";
+            // ball.style.left = "250px";
+            // ball.style.top = "150px";   //wherever you drag the ball ends at the give postion just foe ex
+           
+            ball.style.left = event.pageX - 100 +"px"; //after dragging and leaving we can get X & Y-axis points 
+            ball.style.top = event.pageY - 100 +"px"; //it will move but not accurate do -100 is added for axis 
+        };
+        target.ondragenter = function(event){
+            head.innerHTML = "Target Achieved";
+        };
+    </script>
+</body>
+</html>

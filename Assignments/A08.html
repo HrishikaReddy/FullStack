@@ -7,71 +7,92 @@
 </head>
 <style>
     body{
-        background-color: rgb(221,216,216);
+        background-color: rgb(221, 216, 216) ;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
         margin: 0;
-        
+    }
+    .sub{
+        color: white;
+        background-color: rgb(5, 95, 250);
+        border: none;
+        width: 317px;
+        height: 40px;
+        border-radius: 7px;
+        align-items: center;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .for{
+        color:rgb(67, 81, 244);
+    }
+    .cre{
+        color:white;
+        background-color: rgb(64, 180, 64);
+        border: none;
+        height: 40px;
+        border-radius: 7px;
+        font-size: medium;
+        padding: 10px;
     }
     .main{
         display: flex;
         padding: 10px;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         gap: 50px;
+        height: 350px;
+        width: 4000px;
     }
     .login{
         background-color: white;
-        border: 1px;
+        border: 1px ;
         padding: 10px;
-        border-radius: 6px;
+        border-radius: 7px;
         justify-items: center;
-        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        height: 300px;
+        width: 350px;
     }
-    .sub{
-        color: white;
-        background-color: rgb(23, 88, 241);
+    .text-box {
+        height: 30px;
+        width: 310px;
     }
-    .for{
-        color: rgb(163, 124, 243);
-    }
-    .cre{
-        color: white;
-        background-color: rgb(61, 223, 20);
-        border: none;
+    .fac{
+        height: 250px;
+        width: 400px;
+        font-size: xx-large;
     }
 </style>
-
 <script>
-    function acc() {
-        alert("Welcome to facebook");
+    function acc(){
+        alert("Welcome to facebook")
     }
 </script>
 <body>
-    <div class="main">
-        <div>
-            <h1 style="color: rgb(23, 88, 241);">facebook</h1>
-            <p><pre  style="font-family: Arial, Helvetica, sans-serif;">Facebook helps you connect and share
+   <div class="main">
+      <div class="fac">
+        <h1 style="color: rgb(5, 95, 250);">facebook</h1>
+        <p><pre  style="font-family: Arial, Helvetica, sans-serif;">Facebook helps you connect and share 
 with the people in your life.</pre></p>
+       </div>
+    <div>
+      <div class="login">
+        <br>
+          <input type="text" class="text-box" placeholder="Email address or phone number" required ><br><br>
+          <input type="password" class="text-box" placeholder="Password" required> <br><br>
+          <button class="sub">Log in</button><br>
+          <p class="for">Forgotten password?</p>
+            <hr><br>
+           <button class="cre" onclick="acc()">Create new account</button>
         </div>
-        
-        <div>
-        <div class="login">
-            <input type="text" placeholder="Email address or phone number" required style="width: 200px;">
-            <br><br>
-            <input type="password" placeholder="Password" required style="width: 200px;">
-            <br><br>
-            <button class="sub" style="width: 200px;">Submit</button>
-            <p class="for">forgotten password?</p>
-            <hr>
-            <button class="cre" onclick="acc()">Create new account</button>
-        </div>
-        <p>Create a page for a celebrity, brand or business.</p>
-        </div>
+          <pre style="font-family: 'Times New Roman', Times, serif;"><span><b>        Create a Page</b></span> for a celebity, band or business</pre>
     </div>
-
-    <!-- new account -->
-    
+   </div>
+   <!-- <div>
+    <h3>Sign Up</h3>
+   </div> -->
 </body>
 </html>
