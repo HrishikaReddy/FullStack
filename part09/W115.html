@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+<body>
+    <script>
+        //encapsulation
+        class Employee {
+            #name = ""
+            get name() {
+                return this.#name;
+            }
+            set name(value) {
+                this.#name = value
+            }
+        }
+
+        const emp1 = new Employee()
+        emp1.name = "John"
+        console.log(emp1.name)
+
+    </script>
+</body>
+</html>
+
+<!-- ENCAPSULATION
+creating a variable name which encapsulated within class employee 
+get name mein we are assigning the name
+set name mein we are retreiving name 
+get and set methods - assigning and retreiving
+#name cannot be used ouside that class -->

@@ -1,0 +1,26 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p><input type="text" id="txtName" placeholder="Enter Name"/></p>
+    <p><input type="text" id="txtEmail" placeholder="Enter Email"/></p>
+    <p><input type="text" id="txtPhone" placeholder="Enter Phone"/></p>
+    <button onclick="f1()">Submit</button><br>
+    <table id="t" border="1"></table>
+    <script>
+        function f1(){
+            let row = t.insertRow();
+            let cell1 = row.insertCell(0); //for cell we are giving index 0,1,2
+            let cell2 = row.insertCell(1);
+            let cell3 = row.insertCell(2);
+            cell1.innerHTML = txtName.value; //for those index we are giving values of above
+            cell2.innerHTML = txtEmail.value;
+            cell3.innerHTML = txtPhone.value;
+            document.body.append(t);
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set</title>
+</head>
+<body>
+    <script>
+        let fruits = new Set(['apple','mango','apple','orange']) //it store unique values only where as in array duplicates also stored twice
+        //apple is considered only once 
+        // console.log(fruits)
+        fruits.add('banana'); //add new element banana
+        console.log(fruits);
+        console.log(fruits.size); //4
+        console.log(fruits.has('mango')); //true
+        fruits.delete('mango'); //deletes mango
+        // console.log(fruits[0]) //we cant access element through index, it comes undefined
+        fruits.forEach(value => {
+            console.log (value);
+        }) //here it prints each element
+    </script>
+</body>
+</html>
